@@ -1,0 +1,12 @@
+* {
+    margin: 5px;
+    padding: 1px;
+    outline: 1px;
+    box-sizing: border-box;
+}
+
+body{
+    background: cornflowerblue;
+    font: 16px sans-serif;
+    color: white;
+}
