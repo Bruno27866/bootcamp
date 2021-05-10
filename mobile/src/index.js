@@ -6,7 +6,7 @@ export default function App() {
     <>
     <StatusBar barStyle = "light-content" backgroundColor = "#7159c1"/>
     <View style = {styles.container}>
-        <Text style = {styles.title}>Hello GoStack</Text>
+        <Text style = {styles.title}>Hello</Text>
     </View>
     </>
     );
