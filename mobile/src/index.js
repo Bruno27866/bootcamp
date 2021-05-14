@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
 
     },
-    buttoText: {
+    buttonText: {
         fontWeight: 'bold',
         fontSize: 16,    
     },
