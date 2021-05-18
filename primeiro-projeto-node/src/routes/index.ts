@@ -1,4 +1,4 @@
-import {request, response, Router} from 'express';
+import {Router} from 'express';
 import appointmentsRouter from './appointments.routes';
 
 const routes = Router ();
