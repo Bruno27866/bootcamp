@@ -1,11 +1,14 @@
 import express, { request, response } from "express";
-import { v4 as uuid } from 'uuid';
 import appointmentsRouter from "./routes/appointments.routes";
 
 const app = express ();
 
 app.get('/', (request, response) => {
   return response.json ({message: 'Hello Beagles Bela & Pankeka'});
+});
+
+app.post('/', (request, response) => {
+  return response.json (appointmentsRouter);
 });
 
 app.listen (3333, () => {
