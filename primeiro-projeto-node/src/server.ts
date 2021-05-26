@@ -1,16 +1,11 @@
-import express, { request, response } from "express";
-import routes from "./routes";
+import express from 'express';
+import routes from './routes';
 
 const app = express ();
 
-app.get('/appointment', (request, response) => {
-  return response.json ({message: 'Hello Beagles Bela & Pankeka'});
-});
+app.use(express.json());
+app.use(routes);
 
-app.post('/appointment', (request, response) => {
-  return response.json(routes);
-});
-
-app.listen (3333, () => {
-    console.log('server started on port 3333');
+app.listen(3333, () =>{
+  console.log('Server started on port 3333')
 });
