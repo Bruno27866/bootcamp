@@ -22,7 +22,10 @@ appointmentsRouter.post('/', (request, response) => {
       return response.status(400).json({message: "Horário indisponível"});
     }
 
-  const appointment = appointmentsRepository.create(provider, parsedDate);
+  const appointment = appointmentsRepository.create({
+    provider,
+    date: parsedDate,
+  });
 
   return response.json(appointment);
 });
